@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>javaScript</title>
+    <script>
+        var maior = 0
+        var soma = 0
+
+        for (i = 0; i < 30; i++) {
+            var idade = parseFloat(prompt("Informe a idade: "))
+            var altura = parseFloat(prompt("Informe a altura: "))
+            soma = soma + altura
+        }
+        var media = soma / 30
+        for (i = 0; i < 30; i++) {
+            var idade = parseFloat(prompt("Informe a idade: "))
+            var altura = parseFloat(prompt("Informe a altura: "))
+            if (idade > 13 && altura < media) {
+                maior = maior + 1
+            }
+        }
+        alert("Quantidade de alunos com mais de 13 anos com altura inferior à média: " + maior);
+    </script>
+</head>
+<body>
+    <h1>12</h1>
+</body>
+</html>

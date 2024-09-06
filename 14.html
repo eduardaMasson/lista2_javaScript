@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        var respostas = [];
+        var perguntas = ["Telefonou para a vítima?","Esteve no local do crime?","Mora perto da vítima?","Devia para a vítima?","Já trabalhou com a vítima?"]
+        for (i in perguntas) {
+            var resposta = prompt(perguntas[i] + " (Responda com 'sim' ou 'não'):")
+            respostas.push(resposta)
+        }
+        var sim = 0
+        for (j in respostas) {
+            if (respostas[j] === 'sim') {
+                sim = sim + 1
+            }
+        }
+        if (sim == 5) {
+            alert("Assassino")
+        } else if (sim >= 3) {
+            alert("Cúmplice")
+        } else if (sim == 2) {
+            alerti("Suspeito")
+        } else {
+            alert("Inocente")
+        }
+    </script>
+</head>
+<body>
+    <h1>14</h1>
+</body>
+</html>

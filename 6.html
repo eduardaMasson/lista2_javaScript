@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>javaScript</title>
+    <script>
+        var media = 0
+        soma = 0
+        var maior = 0
+        for (i = 0; i < 10; i++) {
+            soma = soma * 0
+            var nota1 = parseFloat(prompt("Nota 1: "))
+            var nota2 = parseFloat(prompt("Nota 2: "))
+            var nota3 = parseFloat(prompt("Nota 3: "))
+            var nota4 = parseFloat(prompt("Nota 4: "))
+            soma = nota1 + nota2 + nota3 + nota4
+            media = soma / 4
+            if (media >= 7) {
+                maior = maior + 1
+            }
+        }
+        alert("Quantidade de alunos com média maior ou igual a 7:  " + maior);
+    </script>
+</head>
+<body>
+    <h1>6</h1>
+</body>
+</html>

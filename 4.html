@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+        var lista = ['a','b','c','d','e','f','g','h','i','j']
+        var vogais = ['a','e','i','o','u']
+        var contar = 0
+
+        while (contar < 5) {
+            var retornar = lista.indexOf(vogais[contar])
+            if (retornar !== -1) {
+                lista.splice(retornar, 1)
+            }
+            contar++
+        }
+        alert("Existem " + lista.length + " consoantes")
+        alert(lista)
+    </script>
+</head>
+<body>
+    <h1>4</h1>
+</body>
+</html>

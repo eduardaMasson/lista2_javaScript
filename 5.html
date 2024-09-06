@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>javaScript</title>
+    <script>
+        var num = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+        var par = [];
+        var impar = [];
+        for (lista in num) {
+            if (num[lista] % 2 == 0) {
+                par.push(num[lista]);
+            } else {
+                impar.push(num[lista]);
+            }
+        }
+        alert("Lista: " + num);
+        alert("Pares: " + par);
+        alert("Ímpares: " + impar);
+    </script>
+</head>
+<body>
+    <h1>5</h1>
+</body>
+</html>

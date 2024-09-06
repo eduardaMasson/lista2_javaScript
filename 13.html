@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+    <script>
+        var temperatura = []
+        var meses = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"]
+        for (var i = 0; i < 12; i++) {
+            var temp = parseFloat(prompt("Digite a temperatura média de " + meses[i])) //i especifica e imprime o primeiro elemento da lista
+            temperatura.push(temp)
+        }
+        var soma = 0
+        for (var i = 0; i < temperatura.length; i++) {
+            soma = soma + temperatura[i]
+        }
+        var media = soma/ temperatura.length
+        var maior = "Temperaturas acima da média anual: " 
+        for (var i = 0; i < temperatura.length; i++) {
+            if (temperatura[i] > media) {
+                maior = maior + meses[i] + ": " + temperatura[i] + "°C"
+            }
+        }
+        alert(maior)
+    </script>
+</head>
+<body>
+    <h1>13</h1>
+</body>
+</html>
