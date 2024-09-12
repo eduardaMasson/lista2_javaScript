@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        var lista = []
+        var maior = 0
+        var menor = 0
+        var soma = 0
+        var valor = 1
+
+        while (valor >= 0) {
+            valor = parseInt(prompt("Informe um valor (-1 para finalizar): "))
+            if (valor != -1) {
+               lista.push(valor) 
+            }
+            soma = soma + valor
+        }
+        var quantidade = lista.length
+        var inverter = lista.reverse()
+        var media = soma / lista.length
+
+        for(posicao in lista) {
+            if(lista[posicao] > media) {
+                maior = maior + 1
+            } 
+
+            if (lista[posicao] < 7) {
+                menor = menor + 1
+            } 
+        }
+        alert("Quantidade de valores lidos: " + quantidade);
+        alert("Lista na ordem informada: " + lista);
+        alert("Lista invertida: " + inverter);
+        alert("Soma: " + soma);
+        alert("Média: " + media);
+        alert("Quantidade de valores acima da média: " + maior);
+        alert("Quantidade de valores menores que sete: " + menor);
+        alert("Fim. Obrigada pela atenção!")
+    </script>
+</head>
+<body>
+    <h1>15</h1>
+</body>
+</html>
